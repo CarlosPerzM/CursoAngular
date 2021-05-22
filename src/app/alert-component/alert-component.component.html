@@ -4,9 +4,9 @@
     <input type="text" [(ngModel)]="miTexto">
     <button (click)="creaAlert()">Crea Alert</button>
     <br>
-    <button (click)="img1()">Imagen 1</button>
-    <button (click)="img2()">Imagen 2</button>
-    <button (click)="img3()">Imagen 3</button>
+    <button (click)="changeImage(1)">Imagen 1</button>
+    <button (click)="changeImage(2)">Imagen 2</button>
+    <button (click)="changeImage(3)">Imagen 3</button>
     <br>
     <img [src]="ImageURL" alt="" width="100" height="100">
 </ul>

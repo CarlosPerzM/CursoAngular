@@ -27,16 +27,16 @@ export class AlertComponentComponent implements OnInit {
     alert('Hola '+this.miTexto);
   }
 
-  img1(){
-    this.ImageURL='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png';
+  changeImage(numImg:Number){
+    if(numImg==1){
+      this.ImageURL='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png';
+    }else if(numImg==2){
+      this.ImageURL='https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png';
+    }else if(numImg==3){
+      this.ImageURL='https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png';
+    }
   }
 
-  img2(){
-    this.ImageURL='https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png';
-  }
-
-  img3(){
-    this.ImageURL='https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png';
-  }
+  
 
 }
